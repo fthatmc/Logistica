@@ -1,4 +1,5 @@
 ﻿using Logistica.Application.Interfaces;
+using Logistica.Domain.Entities;
 using Logistica.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -24,6 +25,8 @@ namespace Logistica.Persistence.Repositories
             _context.Set<T>().Add(entity);
             await _context.SaveChangesAsync();
         }
+
+       
 
         public async Task<List<T>> GetAllAsync()
         {

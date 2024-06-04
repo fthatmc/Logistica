@@ -1,4 +1,5 @@
-﻿using Logistica.Application.Interfaces;
+﻿using Logistica.Application.Features.CQRS.Commands.AboutUsCommands;
+using Logistica.Application.Interfaces;
 using Logistica.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -6,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Logistica.Application.Features.CQRS.Commands.AboutUsCommands
+namespace Logistica.Application.Features.CQRS.Handlers.AboutUsHandlers
 {
     public class UpdateAboutUsCommandHandler
     {
