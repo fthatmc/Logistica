@@ -1,0 +1,15 @@
+﻿@model List<AboutUs2Dto>
+
+<div class="row g-4 mb-5">
+    @foreach(var item in Model)
+    {
+        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+            <i class="@item.Icon"></i>
+            <h5>@item.Title</h5>
+            <p class="m-0">@item.Description</p>
+        </div>
+    }
+    
+
+    
+</div>

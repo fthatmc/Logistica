@@ -7,7 +7,7 @@ using Logistica.Persistence.Repositories;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+builder.Services.AddHttpClient();
 builder.Services.AddScoped<LogisticaContext>();
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
