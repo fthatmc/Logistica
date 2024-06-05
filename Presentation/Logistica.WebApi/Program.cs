@@ -1,6 +1,7 @@
 using Logistica.Application.Features.CQRS.Handlers.AboutUs2Handlers;
 using Logistica.Application.Features.CQRS.Handlers.AboutUsHandlers;
 using Logistica.Application.Interfaces;
+using Logistica.Application.Services;
 using Logistica.Persistence.Context;
 using Logistica.Persistence.Repositories;
 
@@ -24,6 +25,7 @@ builder.Services.AddScoped<CreateAboutUs2CommandHandler>();
 builder.Services.AddScoped<UpdateAboutUs2CommandHandler>();
 builder.Services.AddScoped<RemoveAboutUs2CommandHandler>();
 
+builder.Services.AddApplicationService(builder.Configuration);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
