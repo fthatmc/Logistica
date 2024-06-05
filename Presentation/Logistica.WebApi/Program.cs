@@ -25,6 +25,8 @@ builder.Services.AddScoped<CreateAboutUs2CommandHandler>();
 builder.Services.AddScoped<UpdateAboutUs2CommandHandler>();
 builder.Services.AddScoped<RemoveAboutUs2CommandHandler>();
 
+
+//madiatr registration iþlemidir, core/application/service klasörüne bak
 builder.Services.AddApplicationService(builder.Configuration);
 
 builder.Services.AddControllers();
